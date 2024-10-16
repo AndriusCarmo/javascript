@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        mark{
+            color: rgb(4, 100, 4);
+            background-color: rgb(255, 255, 0);
+            font-size: large;
+        }
+        ins{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nascionalidade</h1>
+    <p>Digite o país em que nasceu <input type="text" id="pa"></p>
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="rom"></div>
+    <script>
+        function clicar(){
+            var pais=window.document.getElementById('pa')
+                
+                b=window.document.getElementById('rom')
+                 if(pais.value=='Brasil'){
+                    
+                    b.innerHTML='<mark>Você é brasileiro</mark>'
+                 }else{
+                    
+                    b.innerHTML=`Você nasceu no país ${pais.value}, <strong><ins>você não é brasileiro</ins></strong>`
+                 }   
+
+        }
+    </script>
+
+</body>
+</html>

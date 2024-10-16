@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Digite sua velocida </p>
+    <input type="number" id="num">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="vel"></div> 
+    <div id="multa"></div>
+    <div id="avi"></div>
+    <script>
+        function clicar(){
+            var valor=window.document.getElementById('num')
+                velocidade=Number(valor.value)
+                b=window.document.getElementById('vel')
+                b.innerHTML=`Sua velocidade é de<strong> ${velocidade} Km/h</strong>`
+                avi=window.document.getElementById('avi')
+                avi.innerText='Dirija com cuidado ! '
+                 if(velocidade>100){
+                    var mult=window.document.getElementById('multa')
+                        mult.innerHTML='Você esta <strong>acima da velocida permitida</strong>'
+
+                    }
+                    
+        }
+
+        
+    </script>
+    
+</body>
+</html>

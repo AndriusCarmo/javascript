@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tratamento de Dados</title>
+</head>
+<body>
+    <h1>Manipulação de string no J.S</h1>
+    <h2>Formatação de instring</h2>
+    <p>toda variavel no java scrip é guradada com string então para modificar use os comandos certos</p>
+    <script>
+        var  n1=Number.parseInt(prompt('Digite o primeiro número'))
+             n2=Number.parseFloat(prompt('digite o segundo número'))
+             s=n1+n2
+             alert('a soma dos dois é igual a '+s )
+    </script>
+    <br>
+    <script>
+        var s='Java script'
+            J=s.toUpperCase()
+            j=s.toLowerCase()
+        document.write('estou aprendendo '+J+' em minuscula '+j)
+    </script>
+    <h2>Formatação de número</h2>
+    <script>
+         var n3=3.75
+             n4=n3.toFixed(1) // Dentro do parenteses diz o número de casas depois da vírgula //
+             document.write(n4)
+    </script>
+    <br>
+    <h2>Formatação de string utilizando Template String</h2>
+    <script>
+        var s= 'Java script'
+        document.write(`Eu estou aprendendo <ins>${s}</ins> as demais variaveis são <strong> ${n3}</strong> e <em>${J}</em>`)// Neste caso usamos template string. usa crase no lugar de aspas e dentro das chaves entram as variáveis//
+        // E ainda posso usar as formatações de texto do HTML na string do Java Script//
+    
+    </script>
+</body>
+</html>
